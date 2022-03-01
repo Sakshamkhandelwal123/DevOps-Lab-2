@@ -4,13 +4,13 @@ pipeline {
     stage('Testing') {
       steps {
         echo 'running tests'
-        sh 'mvn test'
+        sh 'maven test'
       }
     }
     stage('Build') {
       steps {
         echo 'Building jar files...'
-        sh 'mvn package'
+        sh 'maven package'
       }
     }
   }
